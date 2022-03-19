@@ -2,3 +2,7 @@
 venv/
 **__pycache__/**
 blance/__pycache__/
+balance/__pycache__/__init__.cpython-310.pyc
+balance/__pycache__/forms.cpython-310.pyc
+balance/__pycache__/routes.cpython-310.pyc
+balance/__pycache__/models.cpython-310.pyc
