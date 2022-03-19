@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block titulo%}
+    Movimientos
+{% endblock %}
+
+{% block contenido %}
+    <h1>Listado de movimientos</h1>
+    <table>
+        <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Concepto</th>
+            <th>Tipo</th>
+            <th>Cantidad</th>
+        </tr>
+        {% for movimiento in movimientos %}
+        <tr>
+            <td>{{ movimiento[0] }}</td>
+            <td>{{ movimiento[1] }}</td>
+            <td>{{ movimiento[2] }}</td>
+            
+            <td>{% if movimiento[3] == 1 %} Ingreso {% else %} Gasto {% endif %}</td>
+            <td>{{ movimiento[4] }}</td>
+        </tr>
+        {% endfor%}
+    </table>
+
+{% endblock %}
